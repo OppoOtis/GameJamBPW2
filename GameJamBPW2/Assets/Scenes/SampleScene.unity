@@ -483,13 +483,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1607157572}
-  m_LocalRotation: {x: 0.32171124, y: -0, z: -0, w: 0.94683784}
-  m_LocalPosition: {x: 0, y: 10, z: -8.51}
+  m_LocalRotation: {x: 0.38246804, y: -0, z: -0, w: 0.92396873}
+  m_LocalPosition: {x: 0, y: 11.21, z: -7.46}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1787416428}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 37.533, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 44.973, y: 0, z: 0}
 --- !u!1 &1787416427
 GameObject:
   m_ObjectHideFlags: 0
@@ -516,7 +516,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1787416427}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: -10}
+  m_LocalPosition: {x: 0, y: 1.79, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1607157575}
@@ -554,7 +554,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 186fc03091a60d141bc83e68d7fbfda5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 0
+  maxSpeed: 40
+  maxBackwardsSpeed: 20
+  rotSpeed: 10
   player: {fileID: 1787416429}
 --- !u!1 &1848099233
 GameObject:
