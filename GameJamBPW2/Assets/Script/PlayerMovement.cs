@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed;
+    private float speed;
     public float maxSpeed;
     public float maxBackwardsSpeed;
     public float rotSpeed;
