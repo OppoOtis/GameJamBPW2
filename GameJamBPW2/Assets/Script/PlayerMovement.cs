@@ -17,7 +17,7 @@ public class PlayerMovement : MonoBehaviour
 
         Quaternion newRotation = new Quaternion(transform.rotation.x, transform.rotation.y, transform.rotation.z, transform.rotation.w); ;
         newRotation *= Quaternion.Euler(0, H * rotSpeed, 0);
-        transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, (Mathf.Abs(speed) / 10) * Time.deltaTime);
+        transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, (Mathf.Abs(speed) / rotSpeed) * Time.deltaTime);
 
         if (V > 0) {
             UpSpeed();

@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class Finish : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    float round;
+
+    private void OnTriggerEnter(Collider other) {
+        round--;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    private void Update() {
+        if(round < 1) {
+            
+        }
     }
 }
