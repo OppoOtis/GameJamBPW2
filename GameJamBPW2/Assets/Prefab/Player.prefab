@@ -49,7 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 50
   maxBackwardsSpeed: 20
-  rotSpeed: 30
+  rotSpeed: 70
   player: {fileID: 3930538730511383761}
 --- !u!65 &3930538730511383763
 BoxCollider:
@@ -74,7 +74,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
