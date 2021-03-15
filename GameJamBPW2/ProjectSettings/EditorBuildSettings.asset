@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/DetuneScene.unity
+    guid: b8b44a4977dacd64294c10c98adff6c7
+  - enabled: 1
+    path: Assets/Scenes/GameTrack.unity
+    guid: e1970112b77560a4893ed035c1ea9132
   m_configObjects: {}
