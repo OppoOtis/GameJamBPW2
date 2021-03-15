@@ -308,7 +308,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 697305694}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.48, y: 2.3077288, z: -18.79}
+  m_LocalPosition: {x: 3.48, y: 3.73, z: 6.28}
   m_LocalScale: {x: 15.093, y: 7.7368, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -595,6 +595,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1787416428}
   - component: {fileID: 1787416430}
+  - component: {fileID: 1787416431}
   - component: {fileID: 1787416429}
   m_Layer: 0
   m_Name: Player
@@ -619,24 +620,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!143 &1787416429
-CharacterController:
+--- !u!54 &1787416429
+Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1787416427}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
   serializedVersion: 2
-  m_Height: 0.2
-  m_Radius: 0.2
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!114 &1787416430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -649,11 +648,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 186fc03091a60d141bc83e68d7fbfda5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
   maxSpeed: 50
   maxBackwardsSpeed: 20
   rotSpeed: 15
   player: {fileID: 1787416429}
+--- !u!65 &1787416431
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787416427}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 3.2403827}
+  m_Center: {x: 0, y: 0, z: 1.1201913}
 --- !u!1 &1848099233
 GameObject:
   m_ObjectHideFlags: 0
