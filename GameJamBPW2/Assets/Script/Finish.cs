@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Finish : MonoBehaviour
 {
-    float round;
+    public float round;
 
     private void OnTriggerEnter(Collider other) {
         round--;
