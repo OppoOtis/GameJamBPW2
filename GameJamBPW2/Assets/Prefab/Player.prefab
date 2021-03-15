@@ -49,7 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 50
   maxBackwardsSpeed: 20
-  rotSpeed: 70
+  rotSpeed: 1.5
   player: {fileID: 3930538730511383761}
 --- !u!65 &3930538730511383763
 BoxCollider:
