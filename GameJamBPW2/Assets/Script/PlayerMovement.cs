@@ -8,31 +8,32 @@ public class PlayerMovement : MonoBehaviour
     public float maxSpeed;
     public float maxBackwardsSpeed;
     public float rotSpeed;
-    public CharacterController player;
+    public Rigidbody player;
 
     void Update()
     {
         float H = Input.GetAxisRaw("Horizontal");
+        float V = Input.GetAxisRaw("Vertical");
 
         Quaternion newRotation = new Quaternion(transform.rotation.x, transform.rotation.y, transform.rotation.z, transform.rotation.w); ;
         newRotation *= Quaternion.Euler(0, H * rotSpeed, 0);
         transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, 4 * Time.deltaTime);
 
-        if (Input.GetKey(KeyCode.W)) {
+        if (V > 0) {
             UpSpeed();
         }
         else {
             DownSpeed();
         }
 
-        if (Input.GetKey(KeyCode.S)) {
+        if (V < 0) {
             BackUpSpeed();
         }
         else {
             BackDownSpeed();
         }
 
-        transform.position += transform.forward * speed * Time.deltaTime;
+        player.velocity = transform.forward * speed;
     }
 
     void UpSpeed() {
