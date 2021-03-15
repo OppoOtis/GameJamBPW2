@@ -613,7 +613,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 34.147, y: -26.913, z: 7.18}
 --- !u!1001 &886619153
 PrefabInstance:
@@ -628,7 +628,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7177326335870821223, guid: 3d8b5995da2bdc7428cffa30bba859a2, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 0
+=======
+      value: 1
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 7177326335870821223, guid: 3d8b5995da2bdc7428cffa30bba859a2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -751,10 +755,14 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 5
 =======
   m_RootOrder: 3
 >>>>>>> d87d8533b886a1e440dc97c8015669cde437a65c
+=======
+  m_RootOrder: 4
+>>>>>>> 67624ce6f798d571cbf20799919086bc246271b8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1856826382
 PrefabInstance:
@@ -765,7 +773,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: bf8349326d5db4d4a833c84830eddad6, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bf8349326d5db4d4a833c84830eddad6, type: 3}
       propertyPath: m_LocalScale.x
@@ -838,7 +846,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3930538730511383760, guid: 64a8600a2fc10f14f89a3d8faabc1cb5, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3930538730511383760, guid: 64a8600a2fc10f14f89a3d8faabc1cb5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -891,10 +899,13 @@ PrefabInstance:
     - target: {fileID: 3930538730511383767, guid: 64a8600a2fc10f14f89a3d8faabc1cb5, type: 3}
       propertyPath: m_Name
       value: Player
+<<<<<<< Updated upstream
       objectReference: {fileID: 0}
     - target: {fileID: 3930538731704125596, guid: 64a8600a2fc10f14f89a3d8faabc1cb5, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.85
+=======
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64a8600a2fc10f14f89a3d8faabc1cb5, type: 3}
