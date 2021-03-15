@@ -305,10 +305,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -425565630206218756, guid: 401f20ae990ad1344ba89dfc5c6741e3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 58cc665b5b31d6948b090ac07e745ec5, type: 2}
     - target: {fileID: 919132149155446097, guid: 401f20ae990ad1344ba89dfc5c6741e3, type: 3}
       propertyPath: m_Name
       value: Car 1.0
       objectReference: {fileID: 0}
+    - target: {fileID: 1170970068873931921, guid: 401f20ae990ad1344ba89dfc5c6741e3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7990ce511d74ca342a685a6e1daae3e2, type: 2}
+    - target: {fileID: 1170970068873931921, guid: 401f20ae990ad1344ba89dfc5c6741e3, type: 3}
+      propertyPath: m_Materials.Array.data[4]
+      value: 
+      objectReference: {fileID: 2100000, guid: e9833037a21368547a82366ed465d2ef, type: 2}
+    - target: {fileID: 1170970068873931921, guid: 401f20ae990ad1344ba89dfc5c6741e3, type: 3}
+      propertyPath: m_Materials.Array.data[6]
+      value: 
+      objectReference: {fileID: 2100000, guid: 15dc2d41b9e343b419b5d27e006ae5a8, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 401f20ae990ad1344ba89dfc5c6741e3, type: 3}
 --- !u!4 &723370615 stripped
