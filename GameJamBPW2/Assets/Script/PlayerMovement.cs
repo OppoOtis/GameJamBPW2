@@ -17,7 +17,7 @@ public class PlayerMovement : MonoBehaviour
 
         Quaternion newRotation = new Quaternion(transform.rotation.x, transform.rotation.y, transform.rotation.z, transform.rotation.w); ;
         newRotation *= Quaternion.Euler(0, H * rotSpeed, 0);
-        transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, 4 * Time.deltaTime);
+        transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, (Mathf.Abs(speed) / 10) * Time.deltaTime);
 
         if (V > 0) {
             UpSpeed();
@@ -41,14 +41,13 @@ public class PlayerMovement : MonoBehaviour
             speed += .5f;
         }
     }
-    void DownSpeed() {
-        if (speed > 0) {
+    void BackUpSpeed() {
+        if (speed > -maxBackwardsSpeed) {
             speed -= .5f;
         }
     }
-
-    void BackUpSpeed() {
-        if (speed > -maxBackwardsSpeed) {
+    void DownSpeed() {
+        if (speed > 0) {
             speed -= .5f;
         }
     }
