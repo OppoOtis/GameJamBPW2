@@ -2,31 +2,58 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour {
-    CharacterController characterController;
+public class PlayerMovement : MonoBehaviour
+{
+    private float speed;
+    public float maxSpeed;
+    public float maxBackwardsSpeed;
+    public float rotSpeed;
+    public CharacterController player;
 
-    public float speed = 6.0f;
-    public float jumpSpeed = 8.0f;
-    public float gravity = 20.0f;
+    void Update()
+    {
+        float H = Input.GetAxisRaw("Horizontal");
 
-    private Vector3 moveDirection = Vector3.zero;
+        Quaternion newRotation = new Quaternion(transform.rotation.x, transform.rotation.y, transform.rotation.z, transform.rotation.w); ;
+        newRotation *= Quaternion.Euler(0, H * rotSpeed, 0);
+        transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, 4 * Time.deltaTime);
 
-    void Start() {
-        characterController = GetComponent<CharacterController>();
+        if (Input.GetKey(KeyCode.W)) {
+            UpSpeed();
+        }
+        else {
+            DownSpeed();
+        }
+
+        if (Input.GetKey(KeyCode.S)) {
+            BackUpSpeed();
+        }
+        else {
+            BackDownSpeed();
+        }
+
+        transform.position += transform.forward * speed * Time.deltaTime;
     }
 
-    void Update() {
-        if (characterController.isGrounded) {
-
-            moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
-            moveDirection *= speed;
-
-            if (Input.GetButton("Jump")) {
-                moveDirection.y = jumpSpeed;
-            }
+    void UpSpeed() {
+        if(speed < maxSpeed) {
+            speed += .5f;
         }
-        moveDirection.y -= gravity * Time.deltaTime;
+    }
+    void DownSpeed() {
+        if (speed > 0) {
+            speed -= .5f;
+        }
+    }
 
-        characterController.Move(moveDirection * Time.deltaTime);
+    void BackUpSpeed() {
+        if (speed > -maxBackwardsSpeed) {
+            speed -= .5f;
+        }
+    }
+    void BackDownSpeed() {
+        if (speed < 0) {
+            speed += .5f;
+        }
     }
 }
